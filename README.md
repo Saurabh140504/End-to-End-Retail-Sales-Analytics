@@ -60,7 +60,7 @@ The goal of this project was to turn 1,000 raw sales transactions into a validat
 
 Raw columns: `Transaction ID`, `Date`, `Customer ID`, `Gender`, `Age`, `Product Category`, `Quantity`, `Price per Unit`, `Total Amount`.
 
-**Important scoping note, found during this review:** every one of the 1,000 `Customer ID` values appears in **exactly one** transaction row — there are zero customers with more than one purchase in this dataset. That means "Top Customers by Revenue" here is really "customers with the single largest transaction," not repeat buyers, and the `Repeat Customers` query in the SQL file will correctly return an empty result set. This is called out again in [Limitations](#limitations) since it affects how several of the KPIs below should be read.
+**Important scoping note, found during this review:** every one of the 1,000 `Customer ID` values appears in **exactly one** transaction row — there are zero customers with more than one purchase in this dataset. That means "Top Customers by Revenue" here is really "customers with the single largest transaction," not repeat buyers, and the `Repeat Customers` query in the SQL file will correctly return an empty result set.
 
 ---
 
